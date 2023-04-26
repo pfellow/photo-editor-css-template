@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://bytegrad.com/course-assets/css/1/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/3ab4be46f0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+
+    <title>
+      SocialEditor -- Simple editor to create and publish social media posts
+    </title>
+  </head>
+  <body class="app">
+    <header class="header">
+      <img
+        src="https://bytegrad.com/course-assets/css/1/logo.svg"
+        alt="logo"
+        class="logo"
+      />
+      <button class="se-btn">File</button>
+      <button class="se-btn">View</button>
+      <button class="se-btn">New</button>
+      <button class="se-btn">
+        <i class="fa-solid fa-crown se-btn__icon"></i>
+      </button>
+      <button class="se-btn">
+        <i class="fa-solid fa-bell se-btn__icon"></i>
+      </button>
+      <button class="se-btn">
+        <i class="fa-solid fa-user-tie"></i
+        ><span class="se-btn__text">Sean C.</span>
+      </button>
+    </header>
+    <div class="app__container">
+      <div class="sidebar">
+        <section class="menu">
+          <button class="menu__button">
+            <i class="fa-solid fa-layer-group menu__icon"></i
+            ><span class="menu__text">Templates</span>
+          </button>
+          <button class="menu__button menu__button--active">
+            <i class="fa-solid fa-image menu__icon"></i
+            ><span class="menu__text">Images</span>
+          </button>
+          <button class="menu__button">
+            <i class="fa-solid fa-font"></i
+            ><span class="menu__text">Text/Font</span>
+          </button>
+          <button class="menu__button">
+            <i class="fa-solid fa-shapes"></i
+            ><span class="menu__text">Shapes</span>
+          </button>
+        </section>
+        <footer class="footer">
+          <small class="copyright">
+            &copy; 2023 SocialEditor. All rights reserved.
+          </small>
+        </footer>
+      </div>
+      <section class="panel">
+        <div class="panel__top">
+          <h1 class="first-heading">Images</h1>
+          <i class="fa-solid fa-angles-left panel__collapse-icon"></i>
+        </div>
+        <div class="panel__images">
+          <img
+            src="img/pic (1).png"
+            alt="picture 1"
+            class="panel__img"
+          />
+          <img
+            src="img/pic (2).png"
+            alt="picture 2"
+            class="panel__img"
+          />
+          <img
+            src="img/pic (3).png"
+            alt="picture 3"
+            class="panel__img"
+          />
+          <img
+            src="img/pic (4).png"
+            alt="picture 4"
+            class="panel__img"
+          />
+          <img
+            src="img/pic (5).png"
+            alt="picture 5"
+            class="panel__img"
+          />
+          <button class="panel__btn">
+            <i class="fa-solid fa-plus panel__upload-icon"></i>
+          </button>
+        </div>
+      </section>
+      <main class="main">
+        <div class="info-bar">
+          <section class="breadcrumbs">
+            <a
+              href=""
+              class="breadcrumbs__link"
+              >Facebook posts</a
+            >
+            <i class="fa-solid fa-angle-right breadcrumbs__icon"></i>
+            <span class="breadcrumbs__name">Happy hour Friday</span>
+          </section>
+          <button class="button">Publish</button>
+        </div>
+        <div class="artboard">
+          <section class="canvas">
+            <img
+              src="/img/5f9c9b00740569d1a4ca291b.jpg"
+              alt=""
+              class="canvas__bg-img"
+            />
+            <img
+              src="/img/5f9c9b00740569d1a4ca291b.jpg"
+              alt=""
+              class="canvas__fg-img"
+            />
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+            <div class="canvas__circle"></div>
+          </section>
+          <section class="tools">
+            <button class="tool tool--active">
+              <i class="fa-solid fa-crop-alt tool-icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fa-solid fa-object-group tool-icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fa-solid fa-pen tool-icon"></i>
+            </button>
+            <button class="tool">
+              <i class="fa-solid fa-trash tool-icon"></i>
+            </button>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
